@@ -41,7 +41,7 @@ def main():
             path = DATA_DIR / "CitationNetworks" / f"{graph}_connected_comp.npz"
 
         elif graph == "Sinanet":
-            path = DATA_DIR / "Sinanet" / f"{graph}.npz"
+            path = DATA_DIR / "Sinanet" / f"{graph}_connected_comp.npz"
 
         elif graph in [
             "American75",
@@ -51,10 +51,10 @@ def main():
             "Colgate88",
             "Yale4",
         ]:
-            path = DATA_DIR / "FacebookNetworks" / f"{graph}.npz"
+            path = DATA_DIR / "FacebookNetworks" / f"{graph}_connected_comp.npz"
 
         elif graph == "Wiki":
-            path = DATA_DIR / "Wiki" / f"{graph}.npz"
+            path = DATA_DIR / "Wiki" / f"{graph}_connected_comp.npz"
 
         data = np.load(path)
         adj = data["adj"]
