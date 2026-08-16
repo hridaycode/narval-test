@@ -3,7 +3,7 @@
 #SBATCH --job-name=graph_summary
 #SBATCH --time=00:05:00
 #SBATCH --cpus-per-task=1
-#SBATCH --mem=4G
+#SBATCH --mem=32G
 #SBATCH --output=graph_summary_%j.out
 
 module load python/3.11.5
